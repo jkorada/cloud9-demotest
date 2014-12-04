@@ -14,7 +14,12 @@
                 Hello World!
             </a:hbox>
             <a:hbox pack="end" padding="5" edge="6 10 10">
-                 <a:button id="demoBtnClose">Close</a:button>
+                 <a:button 
+                  caption = "Close" 
+                  skin    = "btn-default-css3"
+                  onclick = "
+                   require('ext/demotest/demotest').closeDemoTestWindow();"
+                 />
             </a:hbox>
         </a:vbox>
     </a:window>
