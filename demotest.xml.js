@@ -16,7 +16,12 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                Hello World!\n' +
 '            </a:hbox>\n' +
 '            <a:hbox pack="end" padding="5" edge="6 10 10">\n' +
-'                 <a:button id="demoBtnClose">Close</a:button>\n' +
+'                <a:button \n' +
+'                  caption = "Close" \n' +
+'                  skin    = "btn-default-css3"\n' +
+'                  onclick = "\n' +
+'                   require(\'ext/demotest/demotest\').closeDemoTestWindow();"\n' +
+'                 />\n' +
 '            </a:hbox>\n' +
 '        </a:vbox>\n' +
 '    </a:window>\n' +
