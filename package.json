@@ -1,11 +1,11 @@
 {
-    "name": "ext.template",
+    "name": "ext.demotest",
     "version": "0.0.1",
-    "main": "demotest.js",
+    "main": "cloud9-demotest.js",
     "private": true,
     "plugin": {
         "provides": [
-            "ext.template"
+            "ext.demotest"
         ],
         "consumes": [
             "client-plugins"
