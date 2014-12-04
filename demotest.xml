@@ -1,7 +1,7 @@
 <a:application xmlns:a="http://ajax.org/2005/aml">
     <a:window
-      id        = "winExtensionTemplate"
-      title     = "Extension Template Window"
+      id        = "winDemoTest"
+      title     = "Demo Test Window"
       center    = "true"
       modal     = "false"
       buttons   = "close"
