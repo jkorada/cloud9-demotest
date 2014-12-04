@@ -19,10 +19,10 @@ var ide = require("core/ide");
 
 var menus = require("ext/menus/menus");
 var commands = require("ext/commands/commands");
-var markup = require("text!ext/extension_template/extension_template.xml");
+var markup = require("text!ext/demotest/demotest.xml");
 
-module.exports = ext.register("ext/extension_template/extension_template", {
-    name     : "Extension Template",
+module.exports = ext.register("ext/demotest/demotest", {
+    name     : "Demo Test",
     dev      : "Ajax.org",
     alone    : true,
     deps     : [],
@@ -33,7 +33,7 @@ module.exports = ext.register("ext/extension_template/extension_template", {
 
     init : function(){
         var _self = this;
-        this.winExtensionTemplate = winExtensionTemplate;
+        this.winDemoTest = winDemoTest;
         
         commands.addCommand({
             name: "sayhello",
@@ -44,12 +44,12 @@ module.exports = ext.register("ext/extension_template/extension_template", {
                 return true;    
             },
             exec: function() {
-                _self.winExtensionTemplate.show()
+                _self.winDemoTest.show()
             }
         });
         
         this.nodes.push(
-            menus.addItemByPath("Edit/Extension Template", new apf.item({
+            menus.addItemByPath("Edit/Demo Test", new apf.item({
                 command : "sayhello"
             }), 5400)
         ); 
@@ -89,7 +89,7 @@ module.exports = ext.register("ext/extension_template/extension_template", {
     },
 
      closeExtensionTemplateWindow : function(){
-        this.winExtensionTemplate.hide();
+        this.winDemoTest.hide();
      }
 });
 
