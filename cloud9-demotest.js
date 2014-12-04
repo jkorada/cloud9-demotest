@@ -19,7 +19,7 @@ var ide = require("core/ide");
 
 var menus = require("ext/menus/menus");
 var commands = require("ext/commands/commands");
-var markup = require("text!ext/demotest/demotest.xml");
+var markup = require('./demotest.xml.js');
 
 module.exports = ext.register("ext/demotest/demotest", {
     name     : "Demo Test",
@@ -56,9 +56,9 @@ module.exports = ext.register("ext/demotest/demotest", {
 
        /* Just a plain menu...
         this.nodes.push(
-            menus.addItemByPath("Edit/Extension Template", new apf.item({
+            menus.addItemByPath("Edit/Demo Test", new apf.item({
                 onclick : function(){
-                    _self.winExtensionTemplate.show();
+                    _self.winDemoTest.show();
                 }
             }), 5400)
         ); */
