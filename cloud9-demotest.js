@@ -88,7 +88,7 @@ module.exports = ext.register("ext/demotest/demotest", {
         this.nodes = [];
     },
 
-     closeExtensionTemplateWindow : function(){
+     closeDemoTestWindow : function(){
         this.winDemoTest.hide();
      }
 });
