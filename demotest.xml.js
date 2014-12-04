@@ -20,7 +20,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                  caption = "Close" \n' +
 '                  skin    = "btn-default-css3"\n' +
 '                  onclick = "\n' +
-'                   require(\'ext/demotest/demotest\').closeDemoTestWindow();"\n' +
+'                   require(\'ext/demotest/cloud9-demotest\').closeDemoTestWindow();"\n' +
 '                 />\n' +
 '            </a:hbox>\n' +
 '        </a:vbox>\n' +
