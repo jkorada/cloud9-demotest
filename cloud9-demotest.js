@@ -33,11 +33,8 @@ module.exports = ext.register("ext/demotest/demotest", {
 
     init : function(){
         var _self = this;
-        this.demoBtnClose = demoBtnClose;
         this.winDemoTest = winDemoTest;
-        this.demoBtnClose.addEventListener('click', __bind(function() {
-          return this.winDemoTest.close();
-        }, this));
+        
         
         commands.addCommand({
             name: "sayhello",
@@ -90,11 +87,10 @@ module.exports = ext.register("ext/demotest/demotest", {
             item.destroy(true, true);
         });
         this.nodes = [];
-        this.demoBtnClose.removeEventListener('click');
     },
 
      closeDemoTestWindow : function(){
-        this.winDemoTest.hide();
+        this.winDemoTest.close();
      }
 });
 
