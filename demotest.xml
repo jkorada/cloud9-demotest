@@ -18,7 +18,7 @@
                   caption = "Close" 
                   skin    = "btn-default-css3"
                   onclick = "
-                   require('ext/extension_template/extension_template').closeExtensionTemplateWindow();"
+                   require('ext/demotest/demotest').closeDemoTestWindow();"
                  />
             </a:hbox>
         </a:vbox>
